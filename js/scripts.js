@@ -8,6 +8,7 @@ var pingponggame = function(inputNumber){
 $(document).ready(function(){
   $("#pingpong form").submit(function(event){
     var inputNum= parseInt($("input#input1").val());
+     $("ul").empty();
 
     for (var i = 1; i <= inputNum; i += 1) {
       if (i % 15 === 0){
