@@ -14,16 +14,16 @@ $(document).ready(function(){
     for (var i = 1; i <= inputNum; i + 1) {
 
       if (i % 3 === 0){
-          $("ul").append("<li>ping<li>");
+          $("#result").append("<li>ping<li>");
         }
         else if (i % 5 === 0){
-          $("ul").append("<li>pong<li>");
+          $("#result").append("<li>pong<li>");
         }
         else if (i % 15 === 0){
-          $("ul").append("<li>pingpong<li>");
+          $("#result").append("<li>pingpong<li>");
         }
         else {
-        $("ul").append("<li>" + i + "<li>");
+        $("#result").append("<li>" + i + "<li>");
       }
       event.preventDefault();
     }
